@@ -6,4 +6,4 @@ pip install Pygame
 pip install requests
 ## заметки к скриптам
 ### GitHub-api.py
-чтобы использовать другие данные с данного api посетите api.github.com для справки
+чтобы использовать другие данные с данного api посетите https://api.github.com для справки
