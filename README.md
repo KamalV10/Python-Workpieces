@@ -1,3 +1,3 @@
 # Подготовка к скриптам
-## Pygame
+## Pygame.py
 pip install pygame
