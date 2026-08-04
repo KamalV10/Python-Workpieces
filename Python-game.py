@@ -21,5 +21,5 @@ while running:
     screen.fill((0, 0, 0))
     pygame.draw.circle
 (screen, (255, 200, 0), (x, y), 30)
-    pygame.display.flip()
-    clock.tick(60)
+pygame.display.flip()
+clock.tick(60)
