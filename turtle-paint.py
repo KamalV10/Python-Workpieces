@@ -8,6 +8,7 @@ t.penup() # перестает рисовать при перемещении
 t.left(45)
 t.forward(50)
 t.right(135)
+t.pendown()
 for i in range (4):
-  t.pendown()
   t.forward(200)
+  t.right(90)
