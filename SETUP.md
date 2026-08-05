@@ -9,7 +9,7 @@
 ### [Python-keyboard.py](https://github.com/KamalV10/Python-Workpieces/blob/main/Python-keyboard.py)
 установить библиотеку keyboard
 *pip install keyboard*
-## Заметки к скриптам
+## Примечания
 ### GitHub-api.py
 чтобы использовать другие данные с данного api посетите https://api.github.com для справки
 ## Требуемая версия Python  и pip
