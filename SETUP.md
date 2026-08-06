@@ -18,6 +18,6 @@
 ### Python-game.py
 Версия Python - не выше 3.12
 Версия pip - не указано
-### Github=api.py
+### Github-api.py
 Версия Python - от 3.10
 Версия pip - не указано
