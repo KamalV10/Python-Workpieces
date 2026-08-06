@@ -1,12 +1,12 @@
-import logging
+import logging as l
 
-logging.basicConfig(
-    level=logging.DEBUG,
+l.basicConfig(
+    level=l.DEBUG,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
 )
 
-logging.debug("Отладочная информация")
-logging.info("Приложение запущено")
-logging.warning("Внимание: низкий уровень диска")
-logging.error("Не удалось подключиться к БД")
-logging.critical("Критическая ошибка: остановка работы")
+l.debug("Отладочная информация")
+l.info("Приложение запущено")
+l.warning("Внимание: низкий уровень диска")
+l.error("Не удалось подключиться к БД")
+l.critical("Критическая ошибка: остановка работы")
