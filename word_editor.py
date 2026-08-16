@@ -1,5 +1,3 @@
-text = input("Введите текст: ")
-reversed_text = text[::-1]
 def toggle_layout(text: str) -> str:
     en_to_ru = {
         'q': 'й', 'w': 'ц', 'e': 'у', 'r': 'к', 't': 'е', 'y': 'н', 'u': 'г',
@@ -9,10 +7,8 @@ def toggle_layout(text: str) -> str:
         'z': 'я', 'x': 'ч', 'c': 'с', 'v': 'м', 'b': 'и', 'n': 'т', 'm': 'ь',
         ',': 'б', '.': 'ю', '/': '.'
     }
-
     ru_to_en = {v: k for k, v in en_to_ru.items()}
     result = []
-
     for char in text:
         lower_char = char.lower()
         if lower_char in en_to_ru:
@@ -22,13 +18,15 @@ def toggle_layout(text: str) -> str:
         else:
             result.append(char)
             continue
-
         if char.isupper():
             new_char = new_char.upper()
         result.append(new_char)
-
     return ''.join(result)
+text = input("Введите текст: ")
+reversed_text = text[::-1]
+result = toggle_layout(text)
+print("Первозданный текст:", text)
 print("Перевёрнутый текст:", reversed_text)
-print("Полностью заглавные буквы", text.upper())
-print("Полностью строчные буквы", text.lower())
-print("Измененная раскладка", result)
+print("Полностью заглавные буквы:", text.upper())
+print("Полностью строчные буквы:", text.lower())
+print("Измененная раскладка:", result)
