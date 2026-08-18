@@ -7,8 +7,8 @@ t.forward(100) # дорисовывает 4-ю сторону квадрата
 t.clear() # очищает экран
 t.width(5) # изменяет ширину линий до 5 пикселей
 t.color('brown') # начинает рисовать коричневым цветом
-t.backward(100) # движение против направления взгляда курсора
-t.forward(100)
+t.backward(75) # движение против направления взгляда курсора
+t.forward(75)
 t.width(2)
 t.color('green')
 t.forward(45)
@@ -19,3 +19,6 @@ t.backward(45)
 t.left(90)
 t.forward(45)
 t.backward(45)
+t.left(45)
+t.forward(45)
+t.backward(90)
