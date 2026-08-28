@@ -1,23 +1,28 @@
 # SETUP.md
-## Подготовка к скриптам
-### [Python-game.py](https://github.com/KamalV10/Python-Workpieces/blob/main/Python-game.py)
-установить библиотеку pygame
-*pip install Pygame*
-### [Github-api.py](https://github.com/KamalV10/Python-Workpieces/blob/main/Github-api.py)
-установить библиотеку requests
-*pip install requests*
-### [Python-keyboard.py](https://github.com/KamalV10/Python-Workpieces/blob/main/Python-keyboard.py)
-установить библиотеку keyboard
-*pip install keyboard*
-## Примечания
-### GitHub-api.py
-чтобы использовать другие данные с данного api посетите https://api.github.com для справки
-### Python-keyboard.py
-запускайте этот скрипт от имени администратора
-## Требуемая версия Python и pip
-### Python-game.py
-Версия Python - не выше 3.12
+## Требования
+### [k_board.py](https://github.com/KamalV10/Python-Workpieces/blob/main/k_board.py)
+Версия Python - не указано
 Версия pip - не указано
-### Github=api.py
+Библиотека [keyboard](https://pypi.org/project/keyboard/)
+```shell
+pip install keyboard
+```
+### [github_api.py](https://github.com/KamalV10/Python-Workpieces/blob/main/github_api.py)
 Версия Python - от 3.10
-Версия pip - не указано
+Версия pip - от 2.34.2
+Библиотека [requests](https://pypi.org/project/requests/) и зависимости (certfil, charset-normalizer, idna, urllib)
+```shell
+pip install requests
+```
+### [game.py](https://github.com/KamalV10/Python-Workpieces/blob/main/game.py)
+Библиотека [pygame](https://pypi.org/project/pygame/)
+Версия Python - от 3.0 до 3.12
+Версия pip - от 2.6.1
+```shell
+pip install pygame
+```
+## Примечания
+### github_api.py
+чтобы использовать другие данные с данного api посетите https://api.github.com для справки
+### k_board.py
+запускайте этот скрипт от имени администратора

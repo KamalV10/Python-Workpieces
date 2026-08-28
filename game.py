@@ -1,39 +1,44 @@
 import pygame
 
-pygame.init()
-screen = pygame.display.set_mode((800, 600))
-clock = pygame.time.Clock()
+WID, HEI = 800, 600 # создаем константы(неизменяемые переменные) для определения ширины и высоты окна
+pygame.init() # включение всех функций pygame
+screen = pygame.display.set_mode((WID, HEI)) # создаем окно на 800(WID) на 600(HEI) пикселей по горизонтали и вертикали соответственно
+pygame.display.set_caption("Тест") # задаем название окну
+clock = pygame.time.Clock() 
+RAD = 30 # создаем константу которая отвечает за размер круга для удобного редактирования
+SPEED = 5 # создаем константу которая отвечает за скорость круга
 
-x, y = 400, 300
+x, y = WID / 2, HEI / 2 # задаем координаты будущему кругу
 
-running = True
-while running:
-    for event in pygame.event.get():
-        if event.type == pygame.QUIT:
-            running = False
+running = True # на запуске даем переменной значение True...
+while running: # ...что-бы окно не выключалось само, а только при надобности
+    for event in pygame.event.get(): # собираем события которые будут поступать
+        if event.type == pygame.QUIT: # при нажатии на крестик скрипт получает соответствующее событие
+            running = False # при получении вышеуказанного события running получает False и скрипт останавливается
 
-    keys = pygame.key.get_pressed()
-    if keys[pygame.K_LEFT]:
-        x -= 5
+    keys = pygame.key.get_pressed() # присваиваем переменной keys нажатия клавиш
+    if keys[pygame.K_LEFT]: # двигаем круг в зависимости от нажатых клавиш
+        x -= SPEED
     if keys[pygame.K_RIGHT]:
-        x += 5
+        x += SPEED
     if keys[pygame.K_UP]:
-        y -= 5
+        y -= SPEED
     if keys[pygame.K_DOWN]:
-        y += 5
+        y += SPEED
 
-    screen.fill((0, 0, 0))
-    pygame.draw.circle(screen, (255, 200, 0), (x, y), 30)
-    pygame.display.flip()
-    clock.tick(60)
+    if x < RAD: # Создаем удобные границы которые ни пропустят круг ни на кадр и которые подстраиваются под размер окна и будущего круга
+        x = RAD
+    if x > WID - RAD:
+        x = WID - RAD
+    if y < RAD:
+        y = RAD
+    if y > HEI - RAD:
+        y = HEI - RAD
 
-    if y < 30:
-        y = 30
-    if y > 570:
-        y = 570
-    if x > 770:
-        x = 770
-    if x < 30:
-        x = 30
-pygame.quit()
+    screen.fill((0, 0, 0)) # для подстраховки заполняем весь экран черным цветом (изначально экран и без этого черный, но это может не сработать)
+    pygame.draw.circle(screen, (255, 200, 0), (x, y), RAD) # создаем желтый круг в буфере (не на экране) радиусом 30 пикселей на координатах равным переменным x и y
+    pygame.display.flip() # переносим кружок с буфера на экран
+    clock.tick(60) # ограничиваем кол-во кадров в секунду до 60
+
+pygame.quit() # закрываем все функции pygame дабы расчистить вычислительные ресурсы устройства
 
