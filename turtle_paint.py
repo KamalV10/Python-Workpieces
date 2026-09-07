@@ -22,3 +22,4 @@ t.backward(45)
 t.left(45)
 t.forward(45)
 t.backward(90)
+t.exitonclick() # выключение только по клику

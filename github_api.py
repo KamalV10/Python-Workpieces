@@ -1,5 +1,5 @@
 import requests
-url = "https://api.github.com/users/octotat" # замените octotat на свой
+url = "https://api.github.com/users/octocat" # замените octotat на свой
 response = requests.get(url)
 data = response.json()
 print(data["name"])
