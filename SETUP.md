@@ -23,6 +23,10 @@
 3. *Версия pip - от 2.6.1*
 ```pip install pygame```
 
+### [turtle_paint.py](https://github.com/KamalV10/Python-Workpieces/blob/main/turtle_paint.py)
+
+1. *Если у вас Linux то вам необходим модуль tkinter*
+
 ## Примечания
 
 ### github_api.py
