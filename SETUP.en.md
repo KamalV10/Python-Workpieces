@@ -33,8 +33,9 @@
 
 ### github_api.py
 
-For access to additional data from this API, refer to the [API documentation](https://api.github.com).
+1. For access to additional data from this API, refer to the [API documentation](https://api.github.com).
+2. You can only make 60 requests per hour.
 
 ### k_board.py
 
-Run this script as an administrator
+1. Run this script as an administrator

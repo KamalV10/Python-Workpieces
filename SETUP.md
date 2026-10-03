@@ -11,7 +11,7 @@
 
 ### [github_api.py](https://github.com/KamalV10/Python-Workpieces/blob/main/github_api.py)
 
-1. Версия Python - от 3.10*
+1. *Версия Python - от 3.10*
 2. *Версия pip - от 2.34.2*
 3. *Библиотека [requests](https://pypi.org/project/requests/) и зависимости (certfil, charset-normalizer, idna, urllib)*
 ```pip install requests```
@@ -31,8 +31,9 @@
 
 ### github_api.py
 
-Чтобы использовать другие данные с данного api посетите [страницу этого api](https://api.github.com) для справки
+1. Чтобы использовать другие данные с данного api посетите [страницу этого api](https://api.github.com) для справки
+2. Можно делать только 60 запросов в час
 
 ### k_board.py
 
-Запускайте этот скрипт от имени администратора
+1. Запускайте этот скрипт от имени администратора
