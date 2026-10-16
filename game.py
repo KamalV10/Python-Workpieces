@@ -17,13 +17,13 @@ while running: # ...что-бы окно не выключалось само, �
             running = False # при получении вышеуказанного события running получает False и скрипт останавливается
 
     keys = pygame.key.get_pressed() # присваиваем переменной keys нажатия клавиш
-    if keys[pygame.K_LEFT]: # двигаем круг в зависимости от нажатых клавиш
+    if keys[pygame.K_LEFT] or keys[pygame.K_a]: # двигаем круг в зависимости от нажатых клавиш
         x -= SPEED
-    if keys[pygame.K_RIGHT]:
+    if keys[pygame.K_RIGHT] or keys[pygame.K_d]:
         x += SPEED
-    if keys[pygame.K_UP]:
+    if keys[pygame.K_UP] or keys[pygame.K_w]:
         y -= SPEED
-    if keys[pygame.K_DOWN]:
+    if keys[pygame.K_DOWN] or keys[pygame.K_s]:
         y += SPEED
 
     if x < RAD: # Создаем удобные границы которые ни пропустят круг ни на кадр и которые подстраиваются под размер окна и будущего круга
